@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta name="description" content="Rustige Nederlandstalige taal- en communicatieoefeningen voor volwassenen met afasie na een beroerte. Oefen op je eigen tempo, op een tablet of telefoon.">
+  <title>Stap voor stap weer praten — Afasie oefenen</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ga naar inhoud</a>
+  <div class="site-shell">
+    <header class="topbar">
+      <button type="button" class="brand" id="homeBtn" aria-label="Terug naar start">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span class="brand-text">STAP VOOR STAP <small>WEER PRATEN</small></span>
+      </button>
+      <div class="top-controls">
+        <button type="button" id="smallerText" class="icon-button" aria-label="Tekst kleiner" title="Tekst kleiner">A−</button>
+        <button type="button" id="biggerText" class="icon-button" aria-label="Tekst groter" title="Tekst groter">A+</button>
+        <button type="button" id="contrastBtn" class="icon-button contrast-button" aria-pressed="false" title="Hoog contrast">◐</button>
+      </div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="site-footer">
+      <div><b>Jouw woorden. Jouw tempo.</b><span>Oefenmateriaal, geen medische test of vervanging van logopedie.</span></div>
+      <button type="button" id="resetBtn" class="text-link">Voortgang op dit apparaat wissen</button>
+      <span class="footer-credit">Concept Marco Beenen · 2026</span>
+    </footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
