@@ -2,7 +2,9 @@
 
 Nederlandstalige taal- en communicatieoefeningen voor volwassenen met afasie of andere taalproblemen na een beroerte. Dit project is bedacht door **Marco Beenen**, samen met ChatGPT (OpenAI), in november 2026.
 
-**Gebruik direct de openbare website:** [Stap voor stap weer praten](https://stap-voor-stap-weer-praten-2026.marcobeenen.chatgpt.site/)
+**Gebruik de website via GitHub Pages:** [Stap voor stap weer praten](https://sosaklingo.github.io/afasie-oefenboekjes/)
+
+**Alternatieve website:** [Open dezelfde oefeningen](https://stap-voor-stap-weer-praten-2026.marcobeenen.chatgpt.site/)
 
 ## Wat zit erin?
 
@@ -17,6 +19,7 @@ De website werkt op smartphone, tablet en computer en heeft grote knoppen, grote
 
 ## Mappen en bestanden
 
+- [`docs/`](docs/) bevat de openbare GitHub Pages-website, inclusief de drie PDF-boekjes.
 - [`website/dist/`](website/dist/) bevat de volledige statische website (HTML, CSS, JavaScript, favicon en PDF's).
 - [`website/test_site.mjs`](website/test_site.mjs) controleert de opdrachten, communicatiezinnen, schermopmaak en downloadlinks.
 - [`pdf/`](pdf/) bevat de drie printbare A4-boekjes.
