@@ -1,0 +1,318 @@
+{
+  "advanced3": [
+    {
+      "title": "Een afspraak veranderen",
+      "kind": "story",
+      "story": "Eva heeft dinsdag een afspraak bij de fietsenmaker. Maandag krijgt zij een bericht van haar werkgever: ze moet dinsdag langer doorwerken. Daarom belt Eva de fietsenmaker. Ze vraagt of ze donderdag aan het einde van de middag kan komen. De medewerker kijkt in de agenda en zegt dat donderdag om vier uur nog vrij is. Eva schrijft de nieuwe tijd direct op.",
+      "prompt": "Waarom belt Eva de fietsenmaker?",
+      "options": [
+        "Ze wil een nieuwe fiets kopen.",
+        "Ze kan dinsdag niet komen.",
+        "Ze is haar sleutel kwijt."
+      ],
+      "answer": 1,
+      "hint": "Kijk wat er op haar werk verandert."
+    },
+    {
+      "title": "Een bericht begrijpen",
+      "kind": "story",
+      "story": "Op het prikbord in de hal hangt een briefje. De lift wordt vrijdag tussen negen en twaalf uur gecontroleerd. Tijdens de controle kan niemand de lift gebruiken. Bewoners die zware spullen moeten vervoeren, kunnen daarvoor beter een ander moment kiezen. De beheerder vraagt iedereen om de ruimte voor de lift vrij te houden. Op zaterdag werkt de lift weer zoals gewoonlijk.",
+      "prompt": "Wat is voor de bewoners het belangrijkste gevolg?",
+      "options": [
+        "De lift is vrijdag een tijdje niet beschikbaar.",
+        "De lift wordt zaterdag verwijderd.",
+        "Iedereen moet de hal schoonmaken."
+      ],
+      "answer": 0,
+      "hint": "Zoek de zin met 'Tijdens de controle'."
+    },
+    {
+      "title": "Informatie uit een brief",
+      "kind": "story",
+      "story": "Omar ontvangt een brief over zijn nieuwe bibliotheekpas. Hij mag de pas vanaf volgende week ophalen. Daarvoor neemt hij de brief en een geldig identiteitsbewijs mee. De balie is op maandag tot en met donderdag open. Op vrijdag sluit de balie eerder. Omar wil voorkomen dat hij voor niets reist en controleert daarom eerst de openingstijden op de website.",
+      "prompt": "Welke twee dingen moet Omar meenemen?",
+      "options": [
+        "Een boek en contant geld.",
+        "Een brief en een identiteitsbewijs.",
+        "Een foto en een treinkaartje."
+      ],
+      "answer": 1,
+      "hint": "De spullen staan in de derde zin."
+    },
+    {
+      "title": "De volgorde van een plan",
+      "kind": "story",
+      "story": "Sanne wil een kleine maaltijd organiseren voor drie vrienden. Eerst vraagt ze wie er kan komen en of iemand bepaald eten niet mag hebben. Daarna kiest ze een eenvoudig gerecht en maakt ze een boodschappenlijst. Op de dag zelf zet ze de tafel klaar. Pas wanneer iedereen er is, begint ze met het warme eten. Zo hoeft niemand gehaast te eten.",
+      "prompt": "Wat doet Sanne voordat ze een gerecht kiest?",
+      "options": [
+        "Ze zet de tafel klaar.",
+        "Ze begint te koken.",
+        "Ze vraagt wie er kan komen en wat zij mogen eten."
+      ],
+      "answer": 2,
+      "hint": "Let op het woord 'Eerst'."
+    },
+    {
+      "title": "De hoofdgedachte",
+      "kind": "story",
+      "story": "In de buurt is een nieuwe ontmoetingsruimte geopend. Bewoners kunnen er samen koffie drinken, een spel spelen of een activiteit organiseren. Vrijwilligers helpen mensen die voor het eerst binnenkomen. De ruimte is niet alleen bedoeld voor mensen die elkaar al kennen: ook nieuwe bewoners zijn welkom. De organisatoren hopen dat mensen elkaar hierdoor gemakkelijker weten te vinden.",
+      "prompt": "Welke zin vat de tekst het best samen?",
+      "options": [
+        "De buurt krijgt een plek om elkaar te ontmoeten.",
+        "Alle bewoners moeten vrijwilligerswerk doen.",
+        "Er wordt elke dag hetzelfde spel gespeeld."
+      ],
+      "answer": 0,
+      "hint": "Wat hebben alle activiteiten met elkaar gemeen?"
+    },
+    {
+      "title": "Oorzaak en gevolg",
+      "kind": "story",
+      "story": "Tom vertrekt op tijd naar het station. Onderweg merkt hij dat een straat is afgesloten vanwege werkzaamheden. Hij moet een omweg lopen en komt daardoor later aan dan verwacht. De trein is net vertrokken. Tom bekijkt de reisinformatie en ziet dat over twintig minuten een andere trein gaat. Hij stuurt een bericht dat hij iets later komt.",
+      "prompt": "Waarom mist Tom zijn trein?",
+      "options": [
+        "Zijn wekker ging niet af.",
+        "Hij moest door een omweg langer lopen.",
+        "Hij was vergeten waar het station is."
+      ],
+      "answer": 1,
+      "hint": "Zoek het woord 'omweg'."
+    },
+    {
+      "title": "Tijden vergelijken",
+      "kind": "story",
+      "story": "Nina heeft op woensdag twee afspraken. Om tien uur bezoekt ze de tandarts. Het bezoek duurt ongeveer een half uur. Daarna wil ze naar het postkantoor om een pakket op te halen. Het postkantoor opent om elf uur. Nina besluit eerst rustig een kop thee te drinken, zodat ze niet te vroeg bij de deur staat.",
+      "prompt": "Waarom wacht Nina even voordat ze naar het postkantoor gaat?",
+      "options": [
+        "Het postkantoor is nog gesloten.",
+        "Ze is haar pakket vergeten.",
+        "Ze heeft al een pakket ontvangen."
+      ],
+      "answer": 0,
+      "hint": "Vergelijk tien uur en elf uur."
+    },
+    {
+      "title": "Wat bedoelt iemand?",
+      "kind": "story",
+      "story": "Roos nodigt haar buurman Amir uit voor een wandeling. Amir antwoordt: 'Ik zou graag meegaan, maar ik heb vandaag weinig energie. Misschien lukt het morgen.' Roos zegt dat dit helemaal goed is. Ze spreken af dat Amir de volgende ochtend een bericht stuurt. Zo hoeft hij nu nog niets te beloven en blijft de uitnodiging openstaan.",
+      "prompt": "Wat bedoelt Amir vooral met zijn antwoord?",
+      "options": [
+        "Hij wil nooit wandelen.",
+        "Hij wil mogelijk morgen wandelen.",
+        "Hij is zijn telefoon kwijt."
+      ],
+      "answer": 1,
+      "hint": "Lees de woorden 'Misschien lukt het morgen'."
+    },
+    {
+      "title": "Een antwoord schrijven",
+      "kind": "open",
+      "story": "Je krijgt een bericht van een vriend: 'Zullen we zaterdag om twee uur afspreken in het park?' Je wilt graag komen, maar je kunt pas om drie uur. Je wilt vriendelijk antwoorden en meteen een andere tijd voorstellen.",
+      "prompt": "Schrijf of vertel een kort antwoord in twee zinnen.",
+      "words": [
+        "Bedankt voor de uitnodiging.",
+        "Om twee uur kan ik niet.",
+        "Kan het om drie uur?"
+      ],
+      "hint": "Begin met bedanken. Noem daarna de tijd die voor jou past.",
+      "sample": "Leuk dat je vraagt! Om twee uur lukt het niet, maar om drie uur kan ik wel."
+    },
+    {
+      "title": "Een verhaal navertellen",
+      "kind": "open",
+      "story": "Lars wil in zijn tuin iets planten. Hij zoekt eerst een plek met voldoende zon. Daarna koopt hij potgrond en twee kleine planten. Als hij thuiskomt, graaft hij twee gaten en geeft de planten water. Een week later ziet hij dat de bladeren rechtop staan. Hij is blij dat hij rustig de tijd heeft genomen.",
+      "prompt": "Vertel dit verhaal na in drie stappen: eerst, daarna en tot slot.",
+      "words": [
+        "Eerst kiest Lars een plek.",
+        "Daarna plant hij de planten.",
+        "Tot slot kijkt hij hoe ze groeien."
+      ],
+      "hint": "Je hoeft niet alle woorden te onthouden. Gebruik de drie voorbeeldzinnen.",
+      "sample": "Eerst zoekt Lars een plek. Daarna plant hij twee planten. Tot slot ziet hij dat ze groeien."
+    },
+    {
+      "title": "Feit of mening",
+      "kind": "story",
+      "story": "Bij een winkel staat een bord: 'Vandaag sluit de winkel om vijf uur.' Binnen zegt een bezoeker: 'Ik vind dat deze winkel het gezelligst is van de hele straat.' De medewerker legt uit dat de sluitingstijd op het bord klopt. Over de gezelligheid kunnen mensen verschillend denken. Wat iemand mooi of prettig vindt, is niet voor iedereen hetzelfde.",
+      "prompt": "Welke uitspraak is een mening?",
+      "options": [
+        "De winkel sluit om vijf uur.",
+        "Het bord staat bij de winkel.",
+        "Dit is de gezelligste winkel van de straat."
+      ],
+      "answer": 2,
+      "hint": "Bij welke uitspraak kan iemand anders er anders over denken?"
+    },
+    {
+      "title": "Zelf samenvatten",
+      "kind": "open",
+      "story": "Een kleine buurtbibliotheek wil meer bezoekers trekken. Daarom opent ze op woensdag een uur langer. Er komt ook een tafel waar mensen rustig kunnen lezen of samen een boek bespreken. De vrijwilligers hopen dat mensen nu gemakkelijker kunnen langskomen na hun werk. Na een maand vragen ze bezoekers wat goed gaat en wat nog beter kan.",
+      "prompt": "Schrijf of vertel de belangrijkste boodschap in één of twee zinnen.",
+      "words": [
+        "De bibliotheek is langer open.",
+        "Er komt een leestafel.",
+        "Bezoekers mogen hun mening geven."
+      ],
+      "hint": "Denk aan de vraag: wat is er nieuw en waarom?",
+      "sample": "De buurtbibliotheek maakt het gemakkelijker om langs te komen en samen te lezen. Ze vraagt daarna wat bezoekers ervan vinden."
+    }
+  ],
+  "advanced4": [
+    {
+      "title": "Twee standpunten vergelijken",
+      "kind": "story",
+      "story": "Tijdens een buurtbijeenkomst bespreken bewoners een rustig plein. Fatima stelt voor om er meer banken neer te zetten, omdat oudere bewoners dan onderweg kunnen uitrusten. Pieter vindt extra groen belangrijker: bomen geven schaduw op warme dagen. Een derde bewoner merkt op dat er maar weinig ruimte is. De groep besluit eerst te onderzoeken of twee banken en enkele kleine bomen samen passen. Daarna willen ze andere bewoners om hun mening vragen. Zo proberen ze niet meteen één voorstel af te wijzen.",
+      "prompt": "Welk besluit houdt het meest rekening met beide standpunten?",
+      "options": [
+        "Alleen banken plaatsen zonder overleg.",
+        "Onderzoeken of banken en bomen samen passen.",
+        "Niets veranderen en niet meer overleggen."
+      ],
+      "answer": 1,
+      "hint": "Zoek naar het besluit dat Fatima én Pieter ruimte geeft."
+    },
+    {
+      "title": "Een planning aanpassen",
+      "kind": "story",
+      "story": "Jasper organiseert een bijeenkomst voor zijn sportvereniging. De zaal is gereserveerd vanaf zeven uur. Een spreker meldt die ochtend dat zij pas om half acht kan komen. Jasper kan de bijeenkomst niet eenvoudig verplaatsen, omdat de deelnemers al zijn uitgenodigd. Hij besluit om om zeven uur te beginnen met een korte kennismaking. Daarna komt de spreker aan het woord. Hij stuurt iedereen een duidelijk bericht met de aangepaste volgorde. De eindtijd blijft hetzelfde.",
+      "prompt": "Waarom verandert Jasper de volgorde in plaats van de begintijd?",
+      "options": [
+        "Omdat de deelnemers al zijn uitgenodigd.",
+        "Omdat hij geen kennismaking wil.",
+        "Omdat de spreker helemaal niet komt."
+      ],
+      "answer": 0,
+      "hint": "Let op waarom verplaatsen moeilijk is."
+    },
+    {
+      "title": "Feiten en vermoedens",
+      "kind": "story",
+      "story": "In het wijkblad staat dat de buurtbus vorige maand vaker is gebruikt dan in de maand ervoor. De redactie heeft de aantallen bij de vervoerder nagevraagd. Een bewoner denkt dat dit komt doordat het vaker heeft geregend. Een ander vermoedt dat de nieuwe halte belangrijk is. Het wijkblad schrijft erbij dat nog niet is onderzocht waardoor de stijging is ontstaan. De redactie wil de vervoerder later vragen naar een mogelijke verklaring. Tot die tijd blijft de oorzaak onbekend.",
+      "prompt": "Wat kun je op basis van de tekst met zekerheid zeggen?",
+      "options": [
+        "De regen veroorzaakte de stijging.",
+        "De nieuwe halte is de enige reden.",
+        "De buurtbus is vaker gebruikt, maar de oorzaak is onbekend."
+      ],
+      "answer": 2,
+      "hint": "Wat is nagevraagd en wat is alleen een vermoeden?"
+    },
+    {
+      "title": "Een indirect verzoek",
+      "kind": "story",
+      "story": "Bij het eten staat een raam open. Mila zit aan de tafel en zegt tegen haar broer: 'Wat is het hier fris geworden.' Haar broer ziet dat zij haar vest aantrekt. Hij vraagt of zij wil dat het raam dichtgaat. Mila knikt en bedankt hem. Ze had niet letterlijk gevraagd om het raam te sluiten, maar haar opmerking gaf een aanwijzing. In gesprekken zeggen mensen soms iets indirect om vriendelijk of voorzichtig te blijven.",
+      "prompt": "Wat wilde Mila waarschijnlijk duidelijk maken?",
+      "options": [
+        "Dat het raam misschien dicht kan.",
+        "Dat ze een koud drankje wil.",
+        "Dat ze de tafel wil verplaatsen."
+      ],
+      "answer": 0,
+      "hint": "Denk aan wat haar broer daarna vraagt."
+    },
+    {
+      "title": "Voor- en nadelen afwegen",
+      "kind": "story",
+      "story": "Romy moet naar een afspraak in een andere stad. Met de trein kan ze onderweg ontspannen, maar ze moet wel overstappen. Met de auto hoeft ze niet over te stappen, maar parkeren is duur en het kan druk zijn op de weg. De afspraak is midden in de stad, vlak bij het station. Romy vindt rustig reizen belangrijker dan precies voor de deur uitstappen. Ze besluit haar route van tevoren te bekijken en extra tijd te nemen voor de overstap.",
+      "prompt": "Welke reden past het best bij Romy's keuze voor de trein?",
+      "options": [
+        "De auto is altijd sneller.",
+        "De afspraak is vlak bij het station en zij wil rustig reizen.",
+        "Met de trein hoeft zij nooit over te stappen."
+      ],
+      "answer": 1,
+      "hint": "Welke twee dingen vindt Romy belangrijk?"
+    },
+    {
+      "title": "Wat heeft voorrang?",
+      "kind": "story",
+      "story": "Koen heeft een drukke ochtend. Hij wil de planten water geven, de afwas doen en een belangrijk formulier opsturen. Voor het formulier geldt een uiterste inleverdatum van vandaag. Voor de planten en de afwas is dat niet zo. Koen merkt dat hij vermoeid raakt als hij alle taken tegelijk probeert te doen. Hij besluit eerst het formulier rustig te controleren en te versturen. Daarna neemt hij pauze en kijkt welke andere taak nog lukt.",
+      "prompt": "Waarom doet Koen het formulier eerst?",
+      "options": [
+        "Omdat het vandaag op tijd verstuurd moet zijn.",
+        "Omdat de afwas verboden is.",
+        "Omdat hij geen pauze wil nemen."
+      ],
+      "answer": 0,
+      "hint": "Zoek de taak met een uiterste datum."
+    },
+    {
+      "title": "Voorstellen beoordelen",
+      "kind": "story",
+      "story": "Een buurtcentrum wil een cursus organiseren. Voorstel A is één lange bijeenkomst op zaterdag. De docent hoeft dan maar één keer te reizen, maar deelnemers moeten lang achter elkaar opletten. Voorstel B bestaat uit drie kortere bijeenkomsten op verschillende dagen. Dat geeft meer tijd om tussendoor te oefenen, maar sommige deelnemers kunnen niet elke keer aanwezig zijn. Het bestuur wil eerst vragen wat de deelnemers zelf prettig vinden. Daarna kiest het een vorm die zo goed mogelijk aansluit.",
+      "prompt": "Welke informatie helpt het bestuur het meest bij de keuze?",
+      "options": [
+        "De favoriete kleur van het bestuur.",
+        "De wensen en beschikbaarheid van deelnemers.",
+        "Het aantal stoelen in de gang."
+      ],
+      "answer": 1,
+      "hint": "Voor wie wordt de cursus georganiseerd?"
+    },
+    {
+      "title": "Wat is nog onbekend?",
+      "kind": "story",
+      "story": "Elif leest een aankondiging voor een workshop fotografie. De bijeenkomst is op donderdagavond in het wijkcentrum en duurt anderhalf uur. Deelnemers mogen hun eigen camera meenemen, maar dat hoeft niet. De tekst vermeldt niet of aanmelden vooraf nodig is en ook niet hoeveel de workshop kost. Elif wil graag meedoen, maar belt eerst met het wijkcentrum. Zo voorkomt zij dat ze zonder belangrijke informatie vertrekt.",
+      "prompt": "Welke vraag kan Elif niet met de aankondiging beantwoorden?",
+      "options": [
+        "Op welke dag is de workshop?",
+        "Hoe lang duurt de workshop?",
+        "Moet je je vooraf aanmelden?"
+      ],
+      "answer": 2,
+      "hint": "Wat ontbreekt volgens de tekst?"
+    },
+    {
+      "title": "Een voorzichtige conclusie",
+      "kind": "story",
+      "story": "Een kleine winkel probeert nieuwe openingstijden. Op twee donderdagen blijft de deur een uur langer open. Op de eerste donderdag komen vijf extra klanten. Op de tweede donderdag komen er maar twee. De eigenaar vindt het fijn dat sommige mensen later kunnen winkelen, maar hij weet nog niet of het extra uur genoeg oplevert. Twee dagen geven volgens hem onvoldoende informatie om een definitief besluit te nemen. Hij wil de proef daarom nog enkele weken voortzetten.",
+      "prompt": "Welke conclusie is het meest zorgvuldig?",
+      "options": [
+        "Langer openblijven werkt altijd.",
+        "De proef geeft nog te weinig informatie voor een definitief besluit.",
+        "Geen enkele klant wil later winkelen."
+      ],
+      "answer": 1,
+      "hint": "Let op de woorden 'onvoldoende informatie'."
+    },
+    {
+      "title": "Een duidelijke reactie schrijven",
+      "kind": "open",
+      "story": "Je ontvangt een e-mail van een vereniging. De vergadering begint volgende week om acht uur 's avonds. Jij wilt meedoen, maar acht uur is voor jou laat. Je wilt vragen of er ook een verslag komt, zodat je kunt lezen wat er besproken is. Je reactie moet vriendelijk zijn en duidelijk zeggen wat je graag wilt weten.",
+      "prompt": "Schrijf of spreek een antwoord van twee of drie zinnen.",
+      "words": [
+        "Bedankt voor de uitnodiging.",
+        "Acht uur is voor mij laat.",
+        "Komt er een verslag?"
+      ],
+      "hint": "Noem eerst je situatie en stel daarna één duidelijke vraag.",
+      "sample": "Bedankt voor de uitnodiging. Acht uur is voor mij laat. Komt er een verslag dat ik later kan lezen?"
+    },
+    {
+      "title": "Twee kanten van een verhaal",
+      "kind": "open",
+      "story": "Een buurthuis wil minder papier gebruiken. De medewerkers stellen voor om nieuwsbrieven voortaan alleen per e-mail te sturen. Sommige bezoekers vinden dat handig: zij kunnen de informatie gemakkelijk terugzoeken. Andere bezoekers lezen liever papier of gebruiken weinig internet. De leiding wil daarom onderzoeken of beide mogelijkheden kunnen blijven bestaan, misschien met minder papieren exemplaren dan vroeger.",
+      "prompt": "Noem één voordeel en één nadeel van alleen e-mail gebruiken.",
+      "words": [
+        "Een voordeel is ...",
+        "Een nadeel is ...",
+        "Een oplossing kan zijn ..."
+      ],
+      "hint": "Denk aan bezoekers die vaak internet gebruiken en bezoekers die dat niet doen.",
+      "sample": "Een voordeel is dat je minder papier gebruikt. Een nadeel is dat niet iedereen e-mail kan lezen. Een combinatie kan helpen."
+    },
+    {
+      "title": "Je mening onderbouwen",
+      "kind": "open",
+      "story": "In jouw buurt is een lege ruimte beschikbaar. Sommigen willen er een kleine leestafel maken. Anderen zien liever een rustige plek om samen koffie te drinken. De gemeente vraagt bewoners om ideeën en wil vooral weten waarom een voorstel nuttig is. Er is nog geen definitief plan, dus verschillende meningen zijn welkom. Je mag ook een combinatie van ideeën voorstellen.",
+      "prompt": "Vertel of schrijf jouw voorstel. Geef twee redenen waarom je dat kiest.",
+      "words": [
+        "Ik stel voor om ...",
+        "Mijn eerste reden is ...",
+        "Een tweede reden is ..."
+      ],
+      "hint": "Maak drie korte zinnen. Je eigen mening hoeft niet hetzelfde te zijn als die van een ander.",
+      "sample": "Ik stel een leestafel met een koffiehoek voor. Dan kunnen mensen rustig lezen én elkaar ontmoeten. Dat maakt de ruimte voor meer mensen prettig."
+    }
+  ]
+}

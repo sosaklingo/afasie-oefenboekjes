@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Genereer drie A4-afasieboekjes met ingebedde lettertypen en grote letters."""
+"""Genereer vijf A4-afasieboekjes met ingebedde lettertypen en grote letters."""
 
 from __future__ import annotations
 
 from pathlib import Path
+import json
 import re
 from xml.sax.saxutils import escape
 
@@ -200,6 +201,19 @@ BOARD = [
  ("Vragen stellen",["Wat bedoel je?","Welke dag is het?","Waar zijn we?","Wie komt er?","Wanneer?","Wat gaan we doen?","Wil je het herhalen?","Mag ik even nadenken?","Dat klopt"]),
 ]
 
+# De moeilijkere opdrachten komen uit dezelfde bron als de interactieve website.
+EXTRA_DATA = ROOT / "levels-extra.json"
+
+
+def extra_levels():
+    if not EXTRA_DATA.is_file():
+        raise FileNotFoundError("levels-extra.json ontbreekt. Draai eerst exporteer_extra_niveaus.mjs.")
+    data = json.loads(EXTRA_DATA.read_text(encoding="utf-8"))
+    for key in ("advanced3", "advanced4"):
+        if len(data.get(key, [])) != 12:
+            raise ValueError(f"{key} moet 12 opdrachten bevatten")
+    return data
+
 
 def intro(book, level):
     y=book.base("Zo gebruik je dit boekje",section="VOOR JE BEGINT")
@@ -237,11 +251,40 @@ def exercise(book,index,exercise,level):
     book.page_done()
 
 
+def longer_text_exercise(book, index, task):
+    """Gebruik voor langere teksten een leespagina en een aparte vraagpagina."""
+    y = book.base(task["title"], section=f"TEKST {index:02d} VAN 12")
+    y = para(book.c, "Lees rustig. Of laat iemand de tekst voorlezen.", M, y, W-2*M,
+             size=15, leading=24, color=MUTED) - 22
+    y = callout(book, y, task["story"], book.tint, size=15)
+    para(book.c, "Je mag de tekst zo vaak teruglezen als je wilt. Op de volgende pagina staat een vraag.",
+         M, max(125, y-22), W-2*M, size=13, leading=21, color=MUTED)
+    book.page_done()
+
+    y = book.base(task["title"], section=f"VRAAG {index:02d} VAN 12")
+    y = para(book.c, task["prompt"], M, y, W-2*M, size=19, leading=30, bold=True) - 26
+    options = task.get("options")
+    if options:
+        y = choice_boxes(book, options, y)
+        y = para(book.c, "Wijs een antwoord aan of zet er een rondje omheen.", M, y-12,
+                 W-2*M, size=13, color=MUTED) - 35
+        write_lines(book, y, 2)
+    else:
+        words = " · ".join(task.get("words", []))
+        y = callout(book, y, "Zinnen om je op weg te helpen: " + words, book.tint, size=14)
+        write_lines(book, y-15, 6)
+    para(book.c, "HINT: " + task["hint"], M, 154, W-2*M, size=12, leading=19, color=MUTED)
+    book.page_done()
+
+
 def answers(book,exercises):
     y=book.base("Voorbeeldantwoorden",section="ACHTER IN HET BOEK")
     y=callout(book,y,"Kijk samen naar antwoorden als dat helpt. Bij persoonlijke opdrachten is er niet één goed antwoord.",book.tint,14)
     for i,item in enumerate(exercises):
-        if len(item)==5:
+        if isinstance(item, dict):
+            title=item["title"]
+            answer=item.get("sample") or (item["options"][item["answer"]] if item.get("options") else None)
+        elif len(item)==5:
             title,prompt,opts,answer,hint=item
         else:
             title,prompt,opts,answer,hint,story=item
@@ -289,6 +332,23 @@ def make_learning_books():
         intro(b,level)
         for i,task in enumerate(tasks,1):
             exercise(b,i,task,"easy" if num=="01" else "medium")
+        answers(b,tasks)
+        reflection(b)
+        resources(b)
+        results.append((b.close(),b.number))
+    extra = extra_levels()
+    advanced_specs = [
+        ("niveau-3-teksten-begrijpen.pdf", "N3", "Teksten begrijpen",
+         "Langere teksten en vragen over de betekenis", PALEBLUE, extra["advanced3"], "NIVEAU 3"),
+        ("niveau-4-denken-en-verwoorden.pdf", "N4", "Denken en verwoorden",
+         "Moeilijkere teksten, verbanden en een eigen mening", PALEGOLD, extra["advanced4"], "NIVEAU 4"),
+    ]
+    for filename,num,title,subtitle,tint,tasks,level in advanced_specs:
+        b=Book(filename,num,title,subtitle,tint)
+        b.cover(level,"Lees of luister op jouw tempo. Een tekst heeft een eigen pagina en de vraag komt daarna. Aanwijzen, schrijven en pauzeren mag altijd.")
+        intro(b,level)
+        for i,task in enumerate(tasks,1):
+            longer_text_exercise(b,i,task)
         answers(b,tasks)
         reflection(b)
         resources(b)

@@ -2,16 +2,18 @@
 
 Nederlandstalige taal- en communicatieoefeningen voor volwassenen met afasie of andere taalproblemen na een beroerte. Dit project is bedacht door **Marco Beenen**, samen met ChatGPT (OpenAI), in november 2026.
 
-**Gebruik de website via GitHub Pages:** [Stap voor stap weer praten](https://sosaklingo.github.io/afasie-oefenboekjes/)
+**Gebruik direct de openbare website:** [GitHub Pages](https://sosaklingo.github.io/afasie-oefenboekjes/) of [de andere openbare website](https://stap-voor-stap-weer-praten-2026.marcobeenen.chatgpt.site/).
 
-**Alternatieve website:** [Open dezelfde oefeningen](https://stap-voor-stap-weer-praten-2026.marcobeenen.chatgpt.site/)
+Bij openen kies je zelf **niveau 1, 2, 3 of 4**, of direct het communicatiebord. Je kunt op elk moment een ander niveau kiezen.
 
 ## Wat zit erin?
 
 | Onderdeel | Inhoud |
 | --- | --- |
-| Woorden terugvinden | 12 interactieve eenvoudige opdrachten en een PDF van 18 pagina's |
-| Zinnen en verhalen | 12 uitdagendere opdrachten en een PDF van 18 pagina's |
+| Niveau 1 – Woorden terugvinden | 12 interactieve eenvoudige opdrachten en een PDF van 18 pagina's |
+| Niveau 2 – Zinnen en verhalen | 12 uitdagendere opdrachten en een PDF van 18 pagina's |
+| Niveau 3 – Teksten begrijpen | 12 opdrachten met langere teksten, begripsvragen en eigen formuleringen; PDF van 30 pagina's |
+| Niveau 4 – Denken en verwoorden | 12 opdrachten met moeilijkere verhalen, verbanden, afwegingen en een eigen mening; PDF van 30 pagina's |
 | Ik wil iets vertellen | Interactief aanwijsbord met 7 onderwerpen en 63 standaardzinnen, plus een PDF van 14 pagina's |
 | Mijn woorden | Maximaal 9 eigen korte zinnen toevoegen op het eigen apparaat |
 
@@ -19,11 +21,12 @@ De website werkt op smartphone, tablet en computer en heeft grote knoppen, grote
 
 ## Mappen en bestanden
 
-- [`docs/`](docs/) bevat de openbare GitHub Pages-website, inclusief de drie PDF-boekjes.
 - [`website/dist/`](website/dist/) bevat de volledige statische website (HTML, CSS, JavaScript, favicon en PDF's).
 - [`website/test_site.mjs`](website/test_site.mjs) controleert de opdrachten, communicatiezinnen, schermopmaak en downloadlinks.
-- [`pdf/`](pdf/) bevat de drie printbare A4-boekjes.
+- [`pdf/`](pdf/) bevat de vijf printbare A4-boekjes (samen 110 pagina's).
 - [`maak_boekjes.py`](maak_boekjes.py) is de generator voor de boekjes.
+- [`exporteer_extra_niveaus.mjs`](exporteer_extra_niveaus.mjs) maakt de gegevens voor de twee moeilijkere boekjes vanuit de websitebron.
+- [`levels-extra.json`](levels-extra.json) bevat die oefengegevens voor de PDF-generator.
 - [`requirements.txt`](requirements.txt) bevat de Python-afhankelijkheid.
 
 ## Lokaal testen
@@ -41,6 +44,7 @@ Om de PDF's opnieuw te maken:
 
 ```sh
 python3 -m pip install -r requirements.txt
+node exporteer_extra_niveaus.mjs
 python3 maak_boekjes.py
 ```
 

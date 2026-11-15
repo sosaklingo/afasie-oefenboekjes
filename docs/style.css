@@ -27,3 +27,40 @@
 .personal-tile .board-tile{width:100%;overflow-wrap:anywhere;flex:1}
 .remove-phrase{border:0;background:transparent;padding:8px;color:var(--primary);font-size:.85rem;font-weight:800;text-decoration:underline;align-self:center;min-height:40px}
 @media(max-width:650px){.lesson-list{grid-template-columns:repeat(2,minmax(0,1fr))}.personal-form-row{flex-direction:column}.personal-form-row .btn{width:100%}.personal-editor{padding:20px 15px}}
+
+/* Start with an explicit, accessible level choice. */
+.level-start{padding:clamp(38px,6vw,78px) 0 70px;max-width:1120px;margin:0 auto}
+.level-intro{text-align:center;max-width:740px;margin:0 auto 34px}
+.level-intro h1{font-size:clamp(2.25rem,5vw,3.8rem);margin:18px 0 15px}
+.level-intro p{font-size:1.16rem;color:var(--muted);margin:0;line-height:1.65}
+.level-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.level-tile{display:flex;align-items:flex-start;flex-direction:column;text-align:left;gap:11px;min-height:310px;width:100%;border:2px solid #b5d5c5;border-radius:26px;background:#e6f2e9;color:var(--ink);padding:clamp(21px,2.5vw,30px);box-shadow:0 14px 35px #1f463b0e;transition:transform .15s,box-shadow .15s}
+.level-tile:hover{transform:translateY(-3px);box-shadow:0 19px 40px #1f463b18}
+.level-tile.level-medium{background:#e9eff8;border-color:#b5cbdf}
+.level-tile.level-board{background:#fff0c7;border-color:#ead99d}
+.level-icon{display:grid;place-items:center;width:65px;height:65px;background:#fff;border-radius:18px;font-size:1.9rem;color:var(--primary);font-weight:900}
+.level-label{font-size:.85rem;text-transform:uppercase;letter-spacing:.065em;font-weight:900;color:#245f58}
+.level-tile strong{font-size:clamp(1.35rem,2.5vw,1.75rem);line-height:1.25;letter-spacing:-.03em}
+.level-desc{font-size:1rem;line-height:1.55;color:#375e58;flex:1}
+.level-cta{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;background:var(--primary);border-radius:13px;padding:13px 16px;color:#fff;font-weight:900;font-size:.95rem}
+.level-help{display:flex;justify-content:space-between;gap:22px;align-items:center;margin:24px auto 0;padding:23px 26px;border:1px solid var(--border);background:var(--paper);border-radius:20px}
+.level-help p{margin:0;color:var(--muted);max-width:590px}.level-help p strong{color:var(--ink)}
+.level-help .btn{flex-shrink:0;min-height:55px}
+.high-contrast .level-tile{border-color:#134f45;background:#d8efe0}.high-contrast .level-medium{background:#e2eaff}.high-contrast .level-board{background:#ffe8a3}
+@media(max-width:900px){.level-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.level-board{grid-column:1/-1}.level-tile{min-height:280px}.level-help{flex-direction:column;align-items:stretch}}
+@media(max-width:650px){.level-start{padding:29px 0 55px}.level-intro{text-align:left;margin-bottom:25px}.level-intro p{font-size:1.03rem}.level-grid{grid-template-columns:1fr;gap:14px}.level-board{grid-column:auto}.level-tile{min-height:0;padding:20px;border-radius:20px;gap:8px}.level-icon{width:52px;height:52px;font-size:1.6rem}.level-tile strong{font-size:1.4rem}.level-desc{font-size:.96rem}.level-cta{margin-top:6px}.level-help{padding:20px}.level-help .btn{width:100%;font-size:.94rem;padding:12px}}
+
+/* Extra reading levels, including longer texts and five library cards. */
+.level-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.level-tile.level-advanced{background:#f0ebf8;border-color:#d3c4e3}
+.level-tile.level-expert{background:#f5eae1;border-color:#e4cbb5}
+.level-tile.level-board{grid-column:1/-1;min-height:210px}
+.level-tile.level-board .level-cta{max-width:360px}
+.book-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.book-card:last-child{grid-column:1/-1}
+.reading-box .mini-info{display:block;margin-bottom:12px;color:var(--primary)}
+.reading-box p{margin:0 0 14px;line-height:1.78}
+.reading-box p:last-child{margin-bottom:0}
+.high-contrast .level-advanced{background:#e7dff4}
+.high-contrast .level-expert{background:#ffe5cd}
+@media(max-width:650px){.level-grid,.book-grid{grid-template-columns:1fr}.level-tile.level-board,.book-card:last-child{grid-column:auto}.level-tile.level-board{min-height:0}.reading-box{padding:17px 18px}}
