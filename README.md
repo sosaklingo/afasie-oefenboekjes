@@ -44,6 +44,13 @@ node test_site.mjs
 
 Deze controles draaien ook automatisch via GitHub Actions bij nieuwe commits en pull requests. De workflow voert daarnaast een Python-syntaxcontrole uit en gebruikt alleen leesrechten voor de bronbestanden.
 
+GitHub Actions vergelijkt nu ook alle websitebestanden met de gepubliceerde kopie in de map docs. Met Playwright worden de vier niveaus, het communicatiebord, eigen zinnen en leesknoppen echt aangeklikt in Chromium (computer, telefoon en tablet) en WebKit (iPhone-nabootsing). Dit zijn browsertests, geen test op een fysiek toestel. Lokaal uitvoeren kan na installatie van requirements-tests.txt en de Playwright-browsers:
+
+~~~sh
+node website/test_publish_sync.mjs
+python -m unittest discover -s tests -v
+~~~
+
 Om de PDF's opnieuw te maken:
 
 ```sh

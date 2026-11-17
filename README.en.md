@@ -43,6 +43,8 @@ node website/test_site.mjs
 
 GitHub Actions also runs these checks and a Python syntax check on commits and pull requests, using read-only repository permissions.
 
+It also compares the full published docs folder against the tested website/dist files. Browser smoke tests click through all four levels, the communication board, personal phrases and reading settings in Chromium (desktop, phone and tablet emulation) and WebKit (iPhone emulation). These are automated browser tests, not tests on physical devices.
+
 To regenerate the PDF booklets:
 
 ```sh
